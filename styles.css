@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+}
+
+.fa-star {
+  color: gold;
+  
+}
+
+.ptag{
+  color:white
+}
+
+h1,
+h2 {
+  color: wheat;
+}
+
+label{
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.nav-link {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.card {
+  width: 24rem;
+  /* Increase card width to fit larger image */
+  margin: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img-top {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+#fanFavorites .card,
+#weekTop10 .card {
+  flex: 1 0 13%;
+  /* adjust this percentage to fit the number of cards you want per row */
+  margin: 0.5rem;
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#resultImage {
+  width: 100%;
+  height: auto;
+  max-width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+#fanFavorites .card,
+#weekTop10 .card {
+  flex: 1 0 13%;
+  /* adjust this percentage to fit the number of cards you want per row */
+  margin: 0.5rem;
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#resultImage {
+  width: 100%;
+  height: auto;
+  max-width: 18rem;
+  margin-bottom: 1rem;
+}
+
+#resultImage {
+  max-width: 50%;
+  height: 50%;
+}
+
+.watchlist-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.watchlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.btn-remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+#movieCarousel {
+  margin-top: 20px;
+}
+
+#carouselInner .carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card .btn-outline-primary {
+  margin-top: 10px;
+}
+
+.card .btn-outline-danger {
+  margin-top: 10px;
+}
+
+.fa-plus,
+.fa-times {
+  margin-right: 5px;
+}
+
+.card .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 40%;
+  padding: 2px 6px;
+  cursor: pointer;
+}
