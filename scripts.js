@@ -133,7 +133,7 @@ async function showSuggestions(query) {
 }
 
 async function loadCarouselMovies() {
-  const response = await fetch("http://localhost:3000/carouselMovies");
+  const response = await fetch("https://abounding-faithful-desert.glitch.me/carouselMovies");
   const carouselMovies = await response.json();
 
   const carouselInner = document.getElementById("carouselInner");
