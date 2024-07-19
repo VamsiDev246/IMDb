@@ -51,7 +51,7 @@ async function registerUser(event) {
   const password = document.getElementById("password").value;
 
   // Check if the email already exists
-  const existingUserResponse = await fetch(`http://localhost:3000/users?email=${email}`);
+  const existingUserResponse = await fetch(`https://abounding-faithful-desert.glitch.me/users?email=${email}`);
   const existingUser = await existingUserResponse.json();
 
   if (existingUser.length > 0) {
@@ -60,7 +60,7 @@ async function registerUser(event) {
   }
 
   // If email doesn't exist, proceed with registration
-  const response = await fetch("http://localhost:3000/users", {
+  const response = await fetch("https://abounding-faithful-desert.glitch.me/users", {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -84,7 +84,7 @@ async function loginUser(event) {
   const password = document.getElementById("password").value;
 
   const response = await fetch(
-    `http://localhost:3000/users?email=${email}&password=${password}`
+    `https://abounding-faithful-desert.glitch.me/users?email=${email}&password=${password}`
   );
   const users = await response.json();
 
@@ -106,7 +106,7 @@ async function showSuggestions(query) {
     return;
   }
 
-  const response = await fetch(`http://localhost:3000/suggestions?q=${query}`);
+  const response = await fetch(`https://abounding-faithful-desert.glitch.me/suggestions?q=${query}`);
   const suggestions = await response.json();
 
   suggestions.forEach((item) => {
@@ -152,7 +152,7 @@ async function loadCarouselMovies() {
 }
 
 async function loadFanFavorites() {
-  const response = await fetch("http://localhost:3000/fanFavorites");
+  const response = await fetch("https://abounding-faithful-desert.glitch.me/fanFavorites");
   fanFavorites = await response.json();
 
   // Sort fan favorites by rating
@@ -232,7 +232,7 @@ function showPreviousFanFavorites() {
 }
 
 async function loadWeekTop10() {
-  const response = await fetch("http://localhost:3000/weekTop10");
+  const response = await fetch("https://abounding-faithful-desert.glitch.me/weekTop10");
   weekTop10 = await response.json();
 
   // Sort week top 10 by current rank
@@ -277,15 +277,15 @@ async function displayResults() {
   let movie;
 
   if (searchQuery) {
-    response = await fetch(`http://localhost:3000/suggestions/${searchQuery}`);
+    response = await fetch(https://abounding-faithful-desert.glitch.me/${searchQuery}`);
     movie = await response.json();
   } else if (fanFavoriteId) {
     response = await fetch(
-      `http://localhost:3000/fanFavorites/${fanFavoriteId}`
+      `https://abounding-faithful-desert.glitch.me/fanFavorites/${fanFavoriteId}`
     );
     movie = await response.json();
   } else if (weekTop10Id) {
-    response = await fetch(`http://localhost:3000/weekTop10/${weekTop10Id}`);
+    response = await fetch(`https://abounding-faithful-desert.glitch.me/weekTop10/${weekTop10Id}`);
     movie = await response.json();
   }
 
